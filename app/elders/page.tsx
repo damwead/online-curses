@@ -134,7 +134,7 @@ export default function Elders() {
             </div>
           </div>
 
-          {/* RIGHT — Mari */}
+          {/* RIGHT — Liola */}
           <div className="flex flex-col items-center gap-5">
             {/* Framed photo — frame extends beyond photo edges */}
             <div style={{ position: "relative", width: "100%", maxWidth: "260px", padding: "9%" }}>
@@ -179,7 +179,7 @@ export default function Elders() {
                   textShadow: "0 1px 14px rgba(160, 80, 255, 0.5)",
                 }}
               >
-                Mari
+                Liola
               </h2>
               <h3
                 style={{
