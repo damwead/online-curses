@@ -296,6 +296,67 @@
 }
 
 /* ════════════════════════════════════
+   Home split-screen
+   ════════════════════════════════════ */
+
+.home-left {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  overflow: hidden;
+  background: #030d03 url('/bg.jpg') center / cover no-repeat;
+}
+
+.home-left::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 8, 0, 0.58);
+  transition: background 0.45s ease;
+  pointer-events: none;
+}
+
+.home-left:hover::before {
+  background: rgba(0, 8, 0, 0.28);
+}
+
+.home-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  overflow: hidden;
+  background: url('/bg-indulgence.jpeg') center / cover no-repeat;
+}
+
+.home-right::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 248, 230, 0.35);
+  transition: background 0.45s ease;
+  pointer-events: none;
+}
+
+.home-right:hover::before {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.home-panel-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ════════════════════════════════════
    Elders contact form — violet / dark
    ════════════════════════════════════ */
 

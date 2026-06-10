@@ -158,7 +158,7 @@ export default function Indulgence() {
                 <button className="ghost-btn-light" onClick={reset}>
                   ← Relieve Another Sin
                 </button>
-                <Link href="/" className="indulgence-link text-center block">
+                <Link href="/curses" className="indulgence-link text-center block">
                   🌑 Back to Curses
                 </Link>
               </div>
@@ -169,7 +169,7 @@ export default function Indulgence() {
         {/* Back link (shown only on form phase) */}
         {phase === "form" && (
           <Link
-            href="/"
+            href="/curses"
             className="indulgence-link fade-up"
             style={{ animationDelay: "0.25s" }}
           >
