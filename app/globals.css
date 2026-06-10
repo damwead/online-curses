@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* ── Keyframes ── */
+
+@keyframes pentagram-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes pulse-dot {
+  0%, 80%, 100% { opacity: 0.15; transform: scale(0.55); }
+  40%            { opacity: 1;    transform: scale(1); }
+}
+
+@keyframes shadow-orbit {
+  0%   { box-shadow: -20px -12px 55px rgba(0,110,0,0.45), 20px 12px 35px rgba(0,55,0,0.35), 0 0 80px rgba(0,80,0,0.15); }
+  25%  { box-shadow:  20px -12px 55px rgba(0,110,0,0.45),-20px 12px 35px rgba(0,55,0,0.35), 0 0 80px rgba(0,80,0,0.15); }
+  50%  { box-shadow:  20px  12px 55px rgba(0,110,0,0.45),-20px -12px 35px rgba(0,55,0,0.35), 0 0 80px rgba(0,80,0,0.15); }
+  75%  { box-shadow: -20px  12px 55px rgba(0,110,0,0.45), 20px -12px 35px rgba(0,55,0,0.35), 0 0 80px rgba(0,80,0,0.15); }
+  100% { box-shadow: -20px -12px 55px rgba(0,110,0,0.45), 20px 12px 35px rgba(0,55,0,0.35), 0 0 80px rgba(0,80,0,0.15); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes racoon-in {
+  0%   { opacity: 0; transform: scale(0.25) rotate(-12deg); }
+  65%  { opacity: 1; transform: scale(1.07) rotate(2deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes title-in {
+  from { opacity: 0; transform: translateY(-18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Utility classes ── */
+
+.pentagram-spin {
+  animation: pentagram-spin 9s linear infinite;
+  filter: drop-shadow(0 0 28px rgba(30,160,30,0.75))
+          drop-shadow(0 0 60px rgba(10,90,10,0.45));
+}
+
+.pulse-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: #2d6a2d;
+  border-radius: 50%;
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}
+
+.form-glow {
+  animation: shadow-orbit 5s ease-in-out infinite;
+}
+
+.fade-in  { animation: fade-in  1s ease-in   forwards; }
+.slide-up { animation: slide-up 0.8s ease-out forwards; }
+
+.racoon-in {
+  animation: racoon-in 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.title-in {
+  animation: title-in 0.8s ease-out 0.35s both;
+}
+
+/* ── Form inputs ── */
+
+.curse-input {
+  background:   rgba(4, 18, 4, 0.75);
+  border:       1px solid #1a4a1a;
+  border-radius: 3px;
+  color:        #9abf9a;
+  padding:      10px 14px;
+  width:        100%;
+  font-family:  Georgia, 'Times New Roman', serif;
+  font-size:    14px;
+  outline:      none;
+  transition:   border-color 0.3s, box-shadow 0.3s;
+}
+
+.curse-input::placeholder { color: #3d6b3d; }
+
+.curse-input:focus {
+  border-color: #2d6a2d;
+  box-shadow:   0 0 12px rgba(45,106,45,0.35);
+}
+
+/* ── Submit button ── */
+
+.curse-btn {
+  background:     linear-gradient(135deg, #0a3a0a, #1a5c1a);
+  border:         1px solid #2a6a2a;
+  color:          #7fc47f;
+  padding:        12px 32px;
+  font-family:    Georgia, 'Times New Roman', serif;
+  font-size:      14px;
+  letter-spacing: 0.28em;
+  cursor:         pointer;
+  text-transform: uppercase;
+  transition:     all 0.3s;
+  width:          100%;
+}
+
+.curse-btn:hover {
+  background:  linear-gradient(135deg, #1a5c1a, #2d6a2d);
+  box-shadow:  0 0 22px rgba(45,106,45,0.55);
+  color:       #c0ffc0;
+}
