@@ -172,3 +172,135 @@
   text-align:     center;
   margin:         0 0 6px;
 }
+
+/* ════════════════════════════════════
+   Indulgence page — light / creamy
+   ════════════════════════════════════ */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fade-up 0.7s ease-out forwards; }
+
+/* Fire-gradient border wrapper */
+.fire-border-outer {
+  background: linear-gradient(
+    135deg,
+    #ff6b35 0%, #d4380a 20%, #8b0000 50%, #d4380a 80%, #ff6b35 100%
+  );
+  padding:      3px;
+  border-radius: 5px;
+  box-shadow:   0 3px 22px rgba(139, 0, 0, 0.28), 0 1px 5px rgba(0,0,0,0.12);
+}
+
+.fire-border-inner {
+  background:    rgb(205, 186, 153);
+  border-radius: 3px;
+  padding:       24px 28px;
+  text-align:    center;
+}
+
+.latin-text {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style:  italic;
+  font-size:   15px;
+  line-height: 1.85;
+  color:       #3a2310;
+  letter-spacing: 0.02em;
+}
+
+/* Form card */
+.indulgence-card {
+  background:    rgba(253, 247, 236, 0.93);
+  border:        1px solid #d8bfa0;
+  border-radius: 3px;
+  padding:       28px 28px 24px;
+  box-shadow:    0 2px 14px rgba(140, 90, 40, 0.13);
+  width:         100%;
+}
+
+/* Inputs */
+.indulgence-input {
+  background:    rgba(255, 252, 244, 0.97);
+  border:        1px solid #c8a87a;
+  border-radius: 2px;
+  color:         #3e2408;
+  padding:       9px 12px;
+  width:         100%;
+  font-family:   Georgia, 'Times New Roman', serif;
+  font-size:     14px;
+  outline:       none;
+  transition:    border-color 0.25s, box-shadow 0.25s;
+}
+
+.indulgence-input::placeholder { color: #b09060; }
+
+.indulgence-input:focus {
+  border-color: #9a6030;
+  box-shadow:   0 0 8px rgba(154, 96, 48, 0.2);
+}
+
+.indulgence-label {
+  display:        block;
+  color:          #6b4020;
+  font-family:    Georgia, 'Times New Roman', serif;
+  font-size:      10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom:  5px;
+}
+
+/* Submit button */
+.relieve-btn {
+  background:     linear-gradient(135deg, #7a1515, #b03020);
+  border:         1px solid #620e0e;
+  color:          #f8ede0;
+  padding:        11px 24px;
+  font-family:    Georgia, 'Times New Roman', serif;
+  font-size:      13px;
+  letter-spacing: 0.28em;
+  cursor:         pointer;
+  text-transform: uppercase;
+  transition:     all 0.3s;
+  width:          100%;
+  border-radius:  2px;
+}
+
+.relieve-btn:hover {
+  background:  linear-gradient(135deg, #9a2020, #c03535);
+  box-shadow:  0 0 18px rgba(192, 48, 32, 0.4);
+}
+
+/* Ghost button (light variant) */
+.ghost-btn-light {
+  background:     transparent;
+  border:         1px solid #c8a87a;
+  color:          #7a5030;
+  padding:        9px 24px;
+  font-family:    Georgia, 'Times New Roman', serif;
+  font-size:      12px;
+  letter-spacing: 0.28em;
+  cursor:         pointer;
+  text-transform: uppercase;
+  transition:     all 0.3s;
+  width:          100%;
+  border-radius:  2px;
+}
+
+.ghost-btn-light:hover {
+  border-color: #9a7050;
+  color:        #5a3818;
+  background:   rgba(180, 140, 80, 0.08);
+}
+
+/* Absolution message */
+.absolution-msg {
+  text-align:  center;
+  color:       #3e2408;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size:   15px;
+  line-height: 1.9;
+  font-style:  italic;
+}
