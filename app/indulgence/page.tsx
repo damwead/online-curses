@@ -38,6 +38,35 @@ export default function Indulgence() {
 
       <div className="relative z-10 w-full max-w-md flex flex-col items-center gap-5">
 
+        {/* Meet our Elders link */}
+        <div className="text-center fade-up">
+          <p
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: "0.58rem",
+              letterSpacing: "0.38em",
+              textTransform: "uppercase",
+              color: "#8a7050",
+              marginBottom: "4px",
+            }}
+          >
+            ✦ &nbsp; Ancient Circle &nbsp; ✦
+          </p>
+          <Link
+            href="/elders"
+            style={{
+              fontFamily: "Georgia, 'Times New Roman', serif",
+              fontSize: "1.05rem",
+              fontWeight: 700,
+              color: "#7a5a2a",
+              textDecoration: "none",
+              letterSpacing: "0.06em",
+            }}
+          >
+            Meet Our Elders
+          </Link>
+        </div>
+
         {/* ── Latin proclamation ── */}
         <div className="fire-border-outer w-full fade-up">
           <div className="fire-border-inner">

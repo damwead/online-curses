@@ -161,6 +161,36 @@ export default function Home() {
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-md">
 
+        {/* Meet our Elders link */}
+        <div className="w-full text-center mb-5 slide-up">
+          <p
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: "0.58rem",
+              letterSpacing: "0.38em",
+              textTransform: "uppercase",
+              color: "#3a6a3a",
+              marginBottom: "4px",
+            }}
+          >
+            ✦ &nbsp; Ancient Circle &nbsp; ✦
+          </p>
+          <Link
+            href="/elders"
+            style={{
+              fontFamily: "Georgia, 'Times New Roman', serif",
+              fontSize: "1.05rem",
+              fontWeight: 700,
+              color: "#7ac47a",
+              textDecoration: "none",
+              letterSpacing: "0.06em",
+              textShadow: "0 0 12px rgba(80,160,80,0.5)",
+            }}
+          >
+            Meet Our Elders
+          </Link>
+        </div>
+
         {/* Form card */}
         <form
           onSubmit={handleSubmit}
