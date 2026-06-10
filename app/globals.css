@@ -116,3 +116,59 @@
   box-shadow:  0 0 22px rgba(45,106,45,0.55);
   color:       #c0ffc0;
 }
+
+/* ── Ghost / secondary button ── */
+
+.ghost-btn {
+  background:     transparent;
+  border:         1px solid #1f4d1f;
+  color:          #4a8a4a;
+  padding:        10px 24px;
+  font-family:    Georgia, 'Times New Roman', serif;
+  font-size:      13px;
+  letter-spacing: 0.26em;
+  cursor:         pointer;
+  text-transform: uppercase;
+  transition:     all 0.3s;
+  width:          100%;
+}
+
+.ghost-btn:hover {
+  border-color: #2d6a2d;
+  color:        #8fd48f;
+  background:   rgba(45,106,45,0.07);
+}
+
+/* ── Indulgence link ── */
+
+.indulgence-link {
+  display:         block;
+  text-align:      center;
+  color:           #b86a12;
+  font-family:     Georgia, 'Times New Roman', serif;
+  font-size:       11px;
+  letter-spacing:  0.32em;
+  text-transform:  uppercase;
+  text-decoration: none;
+  padding:         10px 0;
+  border-bottom:   1px solid rgba(184,106,18,0.3);
+  transition:      color 0.3s, border-color 0.3s;
+  width:           100%;
+}
+
+.indulgence-link:hover {
+  color:        #f09030;
+  border-color: rgba(240,144,48,0.55);
+}
+
+/* ── Below-form label ── */
+
+.sin-heading {
+  color:          #5a3a10;
+  font-family:    Georgia, 'Times New Roman', serif;
+  font-size:      10px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  text-align:     center;
+  margin:         0 0 6px;
+}

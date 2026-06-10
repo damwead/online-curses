@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect, FormEvent } from "react";
 
 type Phase = "loading" | "form" | "cursed";
@@ -71,7 +72,7 @@ export default function Home() {
   const [additional, setAdditional] = useState("");
 
   useEffect(() => {
-    const t = setTimeout(() => setPhase("form"), 2200);
+    const t = setTimeout(() => setPhase("form"), 1200);
     return () => clearTimeout(t);
   }, []);
 
@@ -132,6 +133,14 @@ export default function Home() {
           <br />
           <CursedWord />
         </h1>
+        <div className="flex flex-col items-center gap-3 w-full max-w-xs mt-2">
+          <button className="ghost-btn" onClick={() => setPhase("form")}>
+            ← Cast Another Curse
+          </button>
+          <Link href="/indulgence" className="indulgence-link">
+            🔥 Seek Indulgence
+          </Link>
+        </div>
       </div>
     );
   }
@@ -246,6 +255,12 @@ export default function Home() {
             Cast the Curse
           </button>
         </form>
+        <div className="w-full mt-4 flex flex-col items-center gap-0">
+          <h3 className="sin-heading">🔥 Feeling sinful?</h3>
+          <Link href="/indulgence" className="indulgence-link">
+            Seek Indulgence
+          </Link>
+        </div>
       </div>
     </div>
   );
