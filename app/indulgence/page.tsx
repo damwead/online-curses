@@ -63,7 +63,7 @@ export default function Indulgence() {
               letterSpacing: "0.06em",
             }}
           >
-            Meet Our Elders
+            Click Here to - Meet Our Elders
           </Link>
         </div>
 

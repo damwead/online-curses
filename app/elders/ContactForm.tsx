@@ -50,7 +50,7 @@ export default function ContactForm() {
           marginBottom:  "6px",
         }}
       >
-        Contact Us
+        Ask Elders a question
       </h2>
       <div style={{ width: "50px", height: "1px", background: "rgba(154,111,206,0.45)", marginBottom: "28px" }} />
 

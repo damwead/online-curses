@@ -110,7 +110,7 @@ export default function Datenschutz() {
               letterSpacing: "0.08em",
             }}
           >
-            Stand: Wien, im Jahr der Schlange &nbsp;·&nbsp; Online Curses™
+            Stand: Salzburg, im Jahr der Schlange &nbsp;·&nbsp; Online Curses™
           </p>
         </div>
 
