@@ -72,7 +72,7 @@ export default function Home() {
   const [additional, setAdditional] = useState("");
 
   useEffect(() => {
-    const t = setTimeout(() => setPhase("form"), 1200);
+    const t = setTimeout(() => setPhase("form"), 200);
     return () => clearTimeout(t);
   }, []);
 

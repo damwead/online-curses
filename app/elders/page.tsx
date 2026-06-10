@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactForm from "./ContactForm";
 
 export default function Elders() {
   return (
@@ -222,6 +223,11 @@ export default function Elders() {
             </div>
           </div>
 
+        </div>
+
+        {/* ── Contact Form ── */}
+        <div className="w-full max-w-lg">
+          <ContactForm />
         </div>
 
         {/* ── Navigation ── */}
