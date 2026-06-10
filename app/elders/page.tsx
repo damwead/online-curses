@@ -129,7 +129,7 @@ export default function Elders() {
               >
                 She controls forests and reptiles, as well as the emotions of people — their past and future. If you need help finding your true purpose or who you are, Vuivra will guide you. She works with women, men, and children alike.
                 <br /><br />
-                As a director of Bosch in her alter life, Vuivra brings prosperity and peace to those in need.
+                As a champion of the Battle of the Psychics ("Битва экстрасенсов 2026"), Vuivra brings prosperity and peace to those in need.
               </p>
             </div>
           </div>
